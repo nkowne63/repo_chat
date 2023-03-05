@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "repo-chat"
+version = "0.0.1"
+description = ""
+authors = ["nkowne63rt <neutron63zf@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "repo_chat"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+llama-index = "^0.4.20"
+python-dotenv = "^1.0.0"
+# for github loader download
+gpt-index = "^0.4.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
