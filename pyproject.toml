@@ -5,15 +5,16 @@ description = ""
 authors = ["nkowne63rt <neutron63zf@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "repo_chat"}]
+packages = []
 
 [tool.poetry.dependencies]
 python = "^3.11"
-llama-index = "^0.4.20"
+llama-index = "0.5.0"
 python-dotenv = "^1.0.0"
-# for github loader download
-gpt-index = "^0.4.20"
+tiktoken = "^0.3.3"
 
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
 
 [build-system]
 requires = ["poetry-core"]
